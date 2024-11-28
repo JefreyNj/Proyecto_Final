@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototipos_Maquetas</title>
+    <style>
+        /* Estilo del enlace */
+        a {
+            text-decoration: none;
+            background-color: #66bb6a;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.2s;
+            display: inline-block;
+        }
+
+        a:hover {
+            background-color: #ffeb3b;
+            transform: translateY(-5px);
+        }
+
+        /* Cuadrícula de imágenes */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            gap: 10px; /* Espacio entre imágenes */
+            justify-items: center; /* Centra las imágenes horizontalmente */
+            align-items: center; /* Centra las imágenes verticalmente */
+            margin: 20px 0;
+        }
+
+        .image-grid img {
+            width: 100%; /* Asegura que las imágenes sean fluidas */
+            max-width: 150px; /* Tamaño máximo */
+            height: auto; /* Mantiene la proporción */
+            border: 2px solid #ddd;
+            border-radius: 10px;
+        }
+
+        /* Estilo de textos */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            padding: 10px;
+            max-width: 1200px; /* Limita el ancho de la página */
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas */
+            }
+
+            a {
+                font-size: 1em; /* Ajusta el tamaño del botón */
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-grid {
+                grid-template-columns: 1fr; /* Una sola columna */
+            }
+
+            h2 {
+                font-size: 1.5em; /* Reduce el tamaño del título */
+            }
+
+            p {
+                font-size: 0.9em; /* Reduce el tamaño del texto */
+            }
+
+            a {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Prototipos/Maquetas</h2>
+    <p>En este apartado se aborda la creación del prototipo como un ejemplo práctico de cómo reutilizar materiales, especialmente plásticos y otros objetos reciclables, para darles un segundo uso. El objetivo principal de esta actividad es demostrar que los residuos no tienen por qué ser desechados, sino que pueden convertirse en recursos valiosos al ser transformados en nuevos productos útiles.</p>
+    <p>Este proceso también promueve la sostenibilidad al reducir la demanda de materias primas nuevas y disminuir la cantidad de residuos que terminan en vertederos o en el medio ambiente. Además, al incluir una perspectiva creativa y funcional en la reutilización, el proyecto inspira a las comunidades a ver el reciclaje no solo como una responsabilidad ambiental, sino como una oportunidad para innovar y generar soluciones prácticas.</p>
+    <p>En resumen, este apartado refleja la esencia de Ecocycle: transformar la percepción de los residuos y construir un modelo en el que la sostenibilidad y la creatividad trabajen de la mano para proteger nuestro planeta.</p>
+    
+    <div class="image-grid">
+        <img src="img/Imagen1.jpeg" alt="Imagen 1">
+        <img src="img/Imagen2.jpeg" alt="Imagen 2">
+        <img src="img/Imagen3.jpeg" alt="Imagen 3">
+        <img src="img/Imagen4.jpeg" alt="Imagen 4">
+        <img src="img/Imagen5.jpeg" alt="Imagen 5">
+        <img src="img/Imagen6.jpeg" alt="Imagen 6">
+    </div>
+    
+    <a href="Resumen.html" target="contenido">Volver al Inicio</a>
+</body>
+</html>

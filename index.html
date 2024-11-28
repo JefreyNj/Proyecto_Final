@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Proyecto ABP</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #66bb6a, #ffeb3b);
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+            overflow-y: auto; /* Permite el desbordamiento vertical */
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .shape1 {
+            width: 300px;
+            height: 300px;
+            top: 50px;
+            left: 50px;
+            background-color: rgba(50, 205, 50, 0.5);
+        }
+
+        .shape2 {
+            width: 500px;
+            height: 500px;
+            top: 200px;
+            left: 200px;
+            background-color: rgba(0, 191, 255, 0.4);
+        }
+
+        .shape3 {
+            width: 400px;
+            height: 400px;
+            top: 300px;
+            left: 100px;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        table {
+            width: 100%;
+            height: 100vh;
+            border-collapse: collapse;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content-container {
+            position: relative;
+            z-index: 2;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 90%;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logotitulo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+
+        .logotitulo img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin: 0;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 10px;
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 5px;
+        }
+
+        ul li {
+            margin: 8px 0;
+            font-size: 15px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            background-color: #66bb6a;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.2s;
+            display: inline-block;
+        }
+
+        ul li a:hover {
+            background-color: #ffeb3b;
+            transform: translateY(-5px);
+        }
+
+
+
+        iframe {
+            width: 100%;
+            height: calc(80vh - 20px);
+            border: none;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Ajustes responsivos */
+        @media (max-width: 768px) {
+            .logotitulo {
+                flex-direction: column;
+            }
+
+            .logotitulo img {
+                margin: 0;
+            }
+
+            iframe {
+                height: 50vh;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.4em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            ul li a {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+
+            iframe {
+                height: 45vh;
+            }
+
+            footer {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="content-container">
+                    <div class="logotitulo">
+                        <img src="img/logo.png" alt="Logo">
+                        <h1>Ecocycle: Reciclaje para un Futuro Sostenible</h1>
+                    </div>
+                    <h2>Proyecto ABP</h2>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%" valign="top">
+                <nav>
+                    <ul>
+                        <li><a href="Resumen.html" target="contenido">Resumen</a></li>
+                        <li><a href="Abstract.html" target="contenido">Abstract</a></li>
+                        <li><a href="Introduccion.html" target="contenido">Introducción</a></li>
+                        <li><a href="Metodologia.html" target="contenido">Metodología</a></li>
+                        <li><a href="Objetivos.html" target="contenido">Objetivos</a></li>
+                        <li><a href="Analisis.html" target="contenido">Análisis</a></li>
+                        <li><a href="Presupuesto.html" target="contenido">Presupuesto</a></li>
+                        <li><a href="Prototipos_Maquetas.html" target="contenido">Prototipos/Maquetas</a></li>
+                    </ul>
+                </nav>
+            </td>
+            <td>
+                <iframe name="contenido" src="Resumen.html"></iframe>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <footer>
+                    <h4>
+                    <p>2024 © Herrera Ortega José Saúl, Castro Suárez Luis Miguel, Cortes Nivia Juan José, Garzón Pachón Diego Alejandro, Perdomo Urrea Juan David</p>
+                </h4>
+                </footer>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
